@@ -31,7 +31,7 @@ app.post("/api/contactForm", async (req, res) => {
   try {
     const mailOptions = {
       from: email,
-      to: ["ayyancatalyst@gmail.com"], // Multiple recipients
+      to: ["ayyancatalyst@gmail.com", "info@catalyst.pk", "sohaib@catalyst.pk", "hr@catalyst.pk"], // Multiple recipients
       subject: "New Contact Form Submission",
       text: `🚨 New Contact Form Submission 🚨\n\nYou have received a new message from *${name}* (${contact}) on your website.\n\n🔹 *Email:* ${email}\n🔹 *Message:* \n"${message}"\n\nPlease review the submission and follow up accordingly.`,
     };
